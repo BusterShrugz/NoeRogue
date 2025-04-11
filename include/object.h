@@ -37,11 +37,13 @@ public:
 
 class objectHandler {
 private:
+   
+
+public:
+
     int numberOfObjects;
     int nextId;
     std::vector<class gameObject *> allObjects;
-
-public:
     objectHandler() {
         this->numberOfObjects = 0;
         this->nextId = 0;
