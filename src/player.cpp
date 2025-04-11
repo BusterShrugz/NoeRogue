@@ -2,14 +2,13 @@
 #include "object.h"
 #include "enemies.h"
 #include <iostream>
-#include "graphics.cpp"
 
 
-player* player::createPlayer( objectHandler& handler, Vector2 position, Vector2 size, int speed )
+class player *objectHandler::createPlayer(Vector2 position, Vector2 size, int speed )
 {
-   player* newPlayer = new player( handler.nextId++, position, size, speed );
-   handler.allObjects.push_back( newPlayer );
-   handler.numberOfObjects++;
+   player* newPlayer = new player( this->nextId++, position, size, speed );
+   this->allObjects.push_back( newPlayer );
+   this->numberOfObjects++;
    return newPlayer;
 }
 

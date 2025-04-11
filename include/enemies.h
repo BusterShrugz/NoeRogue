@@ -1,5 +1,4 @@
-#ifndef ENEMIES_H
-#define ENEMIES_H
+#pragma once
 
 #include "raylib.h"
 
@@ -47,5 +46,3 @@ public:
     int getHealth( ) const { return health; }
 };
 
-
-#endif // ENEMIES_H

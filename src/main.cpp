@@ -7,11 +7,12 @@
 #include "raylib.h"
 
 // Local includes
+#include "character.h"
+#include "player.h"
 #include "object.h"
 #include "globals.h"
-#include <mapGen.h>
-#include <player.h>
-#include "graphics.cpp"
+#include "mapGen.h"
+#
 
 /*
 // TODO list (class voted it to be here)
